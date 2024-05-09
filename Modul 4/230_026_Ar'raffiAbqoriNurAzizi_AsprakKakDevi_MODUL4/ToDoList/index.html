@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- CONTAINER-TODOLIST -->
+    <div class="container">
+		<main class="app">
+			<section class="greeting">
+				<input type="text" id="name" />
+			</section>
+			<section class="create-todo">
+				<h2>ToDoList</h2>
+				<form id="new-todo-form">
+					<input type="text" placeholder="Ketikan Tugas Kalian Disini ....." name="content" id="content" />
+					<div class="options">
+						<label>
+							<input type="radio" name="category" id="category1" value="business" />
+						</label>
+						<label>
+							<input type="radio" name="category" id="category2" value="personal" />
+						</label>
+					</div>
+
+					<input type="submit" value="Simpan Pekerjaan" />
+				</form>
+			</section>
+			<section class="todo-list">
+				<h3>List Tugas</h3>
+				<div class="list" id="todo-list"></div>
+			</section>
+		</main>
+        <button type="button" class="back"><a href="../DropDownMenu/index.html" target="_self">Kembali</a></button>
+	</div>
+    <!-- END-CONTAINER-ToDoList -->
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Start-Navbar -->
+    <nav>
+        <h1 class="logo">DropDown-Menu</h1>
+        <ul>
+            <li><a href="#music">Home</a></li>
+            <li><a href="../ToDoList/index.html" target="_self">To-Do-List</a></li>
+        </ul>
+        <p class="dropdown" onclick="toggleMenu()"> DropDown-Menu</p>
+        <!-- sub menu -->
+        <div class="menu-wrap" id="menu">
+            <div class="sub-menu">
+                <div class="menu-info">
+                    <h1>DropDown Menu</h1>
+                    <p>ini adalah menu yang ada di dalam navbarnya</p>
+                </div>
+                <hr />
+                <a href="#" class="sub-menu-link">
+                    <p>Menu navbar 1</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Menu navbar 2</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Menu navbar 3</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Menu navbar 4</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End-Navbar -->  
+</body>
+    <script>
+        let menu = document.getElementById("menu");
+        function toggleMenu() {
+            menu.classList.toggle("open-menu");
+        }
+    </script>
+</html>
